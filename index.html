@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07090d" />
+  <meta name="description" content="NOVA — تجربة عربية متقدمة لاستعراض أجهزة اللابتوب بأسلوب بصري تفاعلي." />
+  <title>NOVA | لابتوبات صُنعت لتتجاوز المتوقع</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+  <div class="page-progress" aria-hidden="true"><span id="pageProgress"></span></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-shell container">
+      <a class="brand" href="#top" aria-label="NOVA - الصفحة الرئيسية">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>NOVA</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="التنقل الرئيسي">
+        <a href="#products">الأجهزة</a>
+        <a href="#story">التقنيات</a>
+        <a href="#compare">المقارنة</a>
+        <a href="#support">الدعم</a>
+      </nav>
+
+      <a class="nav-cta" href="#products">استكشف الأجهزة</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <canvas class="ambient-canvas" id="ambientCanvas" aria-hidden="true"></canvas>
+      <div class="hero-glow glow-one" aria-hidden="true"></div>
+      <div class="hero-glow glow-two" aria-hidden="true"></div>
+
+      <div class="hero-inner container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> الجيل الجديد من الأداء المحمول</p>
+          <h1 id="heroTitle">خفيف في يدك.<br><span>هائل في قدرتك.</span></h1>
+          <p class="hero-lead">اكتشف أجهزة لابتوب صُممت بعناية للألعاب، والإبداع، والعمل الاحترافي—في تجربة بصرية تتحرك معك.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#story">شاهد ما بداخله <span aria-hidden="true">←</span></a>
+            <button class="button button-ghost" id="openFilm" type="button"><span class="play-icon" aria-hidden="true">▶</span> مشاهدة العرض</button>
+          </div>
+        </div>
+
+        <div class="hero-stage reveal" id="heroStage" aria-label="تصميم توضيحي للابتوب NOVA X1">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="laptop-wrap" id="heroLaptop">
+            <div class="laptop-device">
+              <div class="laptop-lid">
+                <div class="screen-bezel">
+                  <div class="camera-dot"></div>
+                  <div class="screen-content screen-aurora" id="heroScreen">
+                    <div class="screen-grid"></div>
+                    <div class="screen-copy">
+                      <span>NOVA X1</span>
+                      <strong>CREATE<br>WITHOUT<br>LIMITS</strong>
+                    </div>
+                    <div class="screen-stat"><b>240</b><small>Hz</small></div>
+                  </div>
+                </div>
+              </div>
+              <div class="laptop-base">
+                <div class="keyboard">
+                  <span class="key wide"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span>
+                  <span class="key"></span><span class="key"></span><span class="key wide"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span>
+                  <span class="key"></span><span class="key"></span><span class="key"></span><span class="key wide"></span><span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span>
+                  <span class="key"></span><span class="key wide"></span><span class="key"></span><span class="key"></span><span class="key space"></span><span class="key"></span><span class="key"></span>
+                </div>
+                <div class="trackpad"></div>
+                <div class="edge-light"></div>
+              </div>
+            </div>
+            <div class="device-shadow"></div>
+          </div>
+          <div class="floating-chip chip-a"><span>RTX</span><b>Studio</b></div>
+          <div class="floating-chip chip-b"><span>OLED</span><b>3.2K</b></div>
+        </div>
+
+        <div class="hero-metrics reveal" aria-label="أبرز المواصفات">
+          <div><strong><span data-count="18">0</span> ساعة</strong><small>بطارية طوال اليوم</small></div>
+          <div><strong><span data-count="240">0</span> هرتز</strong><small>شاشة فائقة السلاسة</small></div>
+          <div><strong><span data-count="1.48">0</span> كجم</strong><small>هيكل خفيف ومتوازن</small></div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#story" aria-label="مرر لاكتشاف المزيد">
+        <span>اكتشف</span><i></i>
+      </a>
+    </section>
+
+    <section class="intro-section section-pad" aria-labelledby="introTitle">
+      <div class="container narrow">
+        <p class="section-kicker reveal">صُمم من الداخل إلى الخارج</p>
+        <h2 class="mega-title reveal" id="introTitle">كل تفصيلة تعمل<br><span>لصالح فكرتك.</span></h2>
+        <p class="intro-copy reveal">من تدفق الهواء إلى دقة الألوان، لا توجد قطعة موضوعة بلا سبب. النتيجة جهاز هادئ حين تحتاج التركيز، وشرس حين تطلب القوة.</p>
+      </div>
+    </section>
+
+    <section class="story" id="story" aria-label="استعراض تقنيات الجهاز">
+      <div class="story-shell container">
+        <div class="story-visual" id="storyVisual">
+          <div class="story-halo" aria-hidden="true"></div>
+          <div class="story-device" id="storyDevice" data-stage="0">
+            <div class="story-screen">
+              <div class="visual-layer visual-display">
+                <div class="display-scan"></div>
+                <span class="display-label">NOVA VIEW</span>
+                <strong>1.07B</strong><small>لون</small>
+              </div>
+              <div class="visual-layer visual-performance">
+                <div class="chip-core"><span>N</span></div>
+                <div class="pulse-ring p1"></div><div class="pulse-ring p2"></div><div class="pulse-ring p3"></div>
+                <span class="perf-label">NOVA CORE X</span>
+              </div>
+              <div class="visual-layer visual-cooling">
+                <div class="fan fan-left"><i></i></div>
+                <div class="fan fan-right"><i></i></div>
+                <div class="heat-path hp1"></div><div class="heat-path hp2"></div><div class="heat-path hp3"></div>
+              </div>
+              <div class="visual-layer visual-audio">
+                <div class="wave wave-1"></div><div class="wave wave-2"></div><div class="wave wave-3"></div>
+                <span class="audio-label">360° SPATIAL AUDIO</span>
+              </div>
+            </div>
+            <div class="story-base"><div class="story-trackpad"></div></div>
+          </div>
+          <div class="stage-index"><span id="stageNumber">01</span><i></i><span>04</span></div>
+        </div>
+
+        <div class="story-steps">
+          <article class="story-step is-active" data-stage="0">
+            <span class="step-no">01</span>
+            <p class="section-kicker">شاشة ترى ما لا تراه الشاشات</p>
+            <h3>تفاصيل تتوهج.<br>وسلاسة تستجيب فورًا.</h3>
+            <p>لوحة OLED بدقة 3.2K ومعدل تحديث يصل إلى 240 هرتز. تباين عميق وألوان دقيقة للمصممين، واستجابة سريعة للاعبين.</p>
+            <div class="step-stats"><div><b>0.2ms</b><small>زمن استجابة</small></div><div><b>100%</b><small>DCI-P3</small></div></div>
+          </article>
+
+          <article class="story-step" data-stage="1">
+            <span class="step-no">02</span>
+            <p class="section-kicker">أداء يتكيف معك</p>
+            <h3>قوة مكتبية.<br>في جهاز يتحرك معك.</h3>
+            <p>معالج متعدد الأنوية ورسوميات مخصصة مدعومة بالذكاء الاصطناعي، مع توزيع ذكي للطاقة بحسب المهمة التي تنفذها.</p>
+            <div class="step-stats"><div><b>24</b><small>نواة معالجة</small></div><div><b>175W</b><small>طاقة رسومية</small></div></div>
+          </article>
+
+          <article class="story-step" data-stage="2">
+            <span class="step-no">03</span>
+            <p class="section-kicker">تبريد محسوب بدقة</p>
+            <h3>أبرد تحت الضغط.<br>وأهدأ أثناء التركيز.</h3>
+            <p>غرفة بخار ممتدة ومروحتان متعاكستان تدفعان الحرارة بعيدًا عن لوحة المفاتيح، مع ملفات تشغيل تلقائية للصمت والأداء.</p>
+            <div class="step-stats"><div><b>-12°</b><small>حرارة أقل</small></div><div><b>29dB</b><small>وضع هادئ</small></div></div>
+          </article>
+
+          <article class="story-step" data-stage="3">
+            <span class="step-no">04</span>
+            <p class="section-kicker">صوت يحيط بك</p>
+            <h3>اسمع المسافة.<br>لا مجرد الصوت.</h3>
+            <p>ست سماعات بتوزيع مكاني متقدم، تضيف عمقًا واضحًا للألعاب والأفلام والاجتماعات، مع ميكروفونات تعزل الضوضاء لحظيًا.</p>
+            <div class="step-stats"><div><b>6</b><small>سماعات</small></div><div><b>360°</b><small>مجال صوتي</small></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="design-section section-pad" aria-labelledby="designTitle">
+      <div class="container">
+        <div class="split-heading">
+          <div>
+            <p class="section-kicker reveal">مظهر هادئ. حضور قوي.</p>
+            <h2 class="section-title reveal" id="designTitle">اختر اللون الذي<br>يشبه طريقتك.</h2>
+          </div>
+          <p class="heading-copy reveal">ألمنيوم مشغول بدقة، حواف ناعمة، ولمسة نهائية مقاومة لآثار الأصابع. جهاز احترافي لا يحتاج أن يصرخ كي يُلاحظ.</p>
+        </div>
+
+        <div class="color-lab reveal" id="colorLab" data-color="graphite">
+          <div class="color-stage">
+            <div class="color-laptop">
+              <div class="color-lid"><span class="nova-glyph">N</span></div>
+              <div class="color-base"><div class="mini-keys"></div><div class="mini-trackpad"></div></div>
+            </div>
+            <div class="color-shadow"></div>
+          </div>
+          <div class="color-panel">
+            <span class="panel-label">اللون المختار</span>
+            <h3 id="colorName">جرافيت فضائي</h3>
+            <p id="colorDesc">درجة داكنة متوازنة، مصممة لتبدو أنيقة في الاستوديو وغرفة الاجتماعات.</p>
+            <div class="swatches" role="group" aria-label="اختر لون الجهاز">
+              <button class="swatch active" data-color="graphite" data-name="جرافيت فضائي" data-desc="درجة داكنة متوازنة، مصممة لتبدو أنيقة في الاستوديو وغرفة الاجتماعات." aria-label="جرافيت فضائي" aria-pressed="true"><span></span></button>
+              <button class="swatch" data-color="silver" data-name="فضي قمري" data-desc="سطح مضيء ونظيف يعكس الضوء بنعومة ويمنح الجهاز حضورًا كلاسيكيًا." aria-label="فضي قمري" aria-pressed="false"><span></span></button>
+              <button class="swatch" data-color="blue" data-name="أزرق ليلي" data-desc="أزرق عميق يتغير مع زاوية الإضاءة، لهوية أكثر جرأة دون مبالغة." aria-label="أزرق ليلي" aria-pressed="false"><span></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bento-section section-pad" aria-labelledby="bentoTitle">
+      <div class="container">
+        <div class="center-heading">
+          <p class="section-kicker reveal">ذكاء في كل طبقة</p>
+          <h2 class="section-title reveal" id="bentoTitle">مصمم ليبقى سريعًا.<br>وسهلًا بعد سنوات.</h2>
+        </div>
+
+        <div class="bento-grid">
+          <article class="bento-card card-large upgrade-card reveal">
+            <div class="card-copy"><span>ترقية بلا تعقيد</span><h3>افتح. بدّل. وانطلق.</h3><p>وصول سريع إلى الذاكرة والتخزين بنظام تثبيت ذكي، من دون تفكيك معقد.</p></div>
+            <div class="upgrade-visual" aria-hidden="true"><div class="motherboard"><i class="ram r1"></i><i class="ram r2"></i><i class="ssd"></i><i class="cpu"></i><span class="trace t1"></span><span class="trace t2"></span><span class="trace t3"></span></div></div>
+          </article>
+
+          <article class="bento-card battery-card reveal">
+            <div class="card-copy"><span>بطارية ذكية</span><h3><b data-count="18">0</b> ساعة</h3><p>إدارة تكيفية للطاقة تتعلم من نمط استخدامك.</p></div>
+            <div class="battery-ring" aria-hidden="true"><span>92%</span></div>
+          </article>
+
+          <article class="bento-card ports-card reveal">
+            <div class="card-copy"><span>اتصال كامل</span><h3>كل منفذ في مكانه.</h3><p>USB‑C سريع، HDMI، قارئ بطاقات، واتصال لاسلكي من الجيل الجديد.</p></div>
+            <div class="port-line" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          </article>
+
+          <article class="bento-card card-wide security-card reveal">
+            <div class="security-visual" aria-hidden="true"><div class="face-grid"><span></span><span></span><span></span><span></span></div><div class="scan-line"></div></div>
+            <div class="card-copy"><span>أمان من النظرة الأولى</span><h3>يفتح لك. ويُغلق عن غيرك.</h3><p>تعرّف ثلاثي الأبعاد على الوجه، شريحة حماية مستقلة، وغطاء فعلي للكاميرا.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section section-pad" id="products" aria-labelledby="productsTitle">
+      <div class="container">
+        <div class="split-heading products-heading">
+          <div><p class="section-kicker reveal">اختر جهازك</p><h2 class="section-title reveal" id="productsTitle">ثلاث شخصيات.<br>قوة واحدة.</h2></div>
+          <div class="filter-tabs reveal" role="tablist" aria-label="تصفية الأجهزة">
+            <button class="active" data-filter="all" role="tab" aria-selected="true">الكل</button>
+            <button data-filter="creator" role="tab" aria-selected="false">للمبدعين</button>
+            <button data-filter="gaming" role="tab" aria-selected="false">للألعاب</button>
+            <button data-filter="mobile" role="tab" aria-selected="false">للتنقل</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <article class="product-card reveal" data-category="creator">
+            <div class="product-badge">الأكثر توازنًا</div>
+            <div class="product-art art-x1"><div class="mini-laptop"><div class="ml-screen"><i></i></div><div class="ml-base"></div></div></div>
+            <div class="product-info"><p>NOVA X1</p><h3>الاستوديو المحمول.</h3><span>شاشة OLED 16 بوصة · رسوميات احترافية · حتى 64GB</span><div class="product-meta"><strong>ابتداءً من ١٬٧٩٩$</strong><button class="circle-button" aria-label="عرض تفاصيل NOVA X1">←</button></div></div>
+          </article>
+
+          <article class="product-card reveal" data-category="gaming">
+            <div class="product-badge hot">أعلى أداء</div>
+            <div class="product-art art-r18"><div class="mini-laptop"><div class="ml-screen"><i></i></div><div class="ml-base"></div></div></div>
+            <div class="product-info"><p>NOVA R18</p><h3>مصمم للفوز.</h3><span>شاشة Mini‑LED 18 بوصة · 240Hz · تبريد ثلاثي</span><div class="product-meta"><strong>ابتداءً من ٢٬٢٩٩$</strong><button class="circle-button" aria-label="عرض تفاصيل NOVA R18">←</button></div></div>
+          </article>
+
+          <article class="product-card reveal" data-category="mobile">
+            <div class="product-badge">الأخف وزنًا</div>
+            <div class="product-art art-air"><div class="mini-laptop"><div class="ml-screen"><i></i></div><div class="ml-base"></div></div></div>
+            <div class="product-info"><p>NOVA Air 14</p><h3>خفيف طوال اليوم.</h3><span>1.09 كجم · بطارية 21 ساعة · شحن USB‑C</span><div class="product-meta"><strong>ابتداءً من ١٬١٩٩$</strong><button class="circle-button" aria-label="عرض تفاصيل NOVA Air 14">←</button></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="compare-section section-pad" id="compare" aria-labelledby="compareTitle">
+      <div class="container">
+        <div class="center-heading">
+          <p class="section-kicker reveal">المقارنة ببساطة</p>
+          <h2 class="section-title reveal" id="compareTitle">اعثر على NOVA المناسب لك.</h2>
+        </div>
+
+        <div class="compare-wrap reveal" tabindex="0" aria-label="جدول مقارنة أجهزة NOVA">
+          <table>
+            <thead><tr><th>المواصفة</th><th>NOVA X1</th><th>NOVA R18</th><th>NOVA Air 14</th></tr></thead>
+            <tbody>
+              <tr><th>الاستخدام المثالي</th><td>التصميم والمونتاج</td><td>الألعاب والأداء الأقصى</td><td>الدراسة والتنقل</td></tr>
+              <tr><th>الشاشة</th><td>16” OLED 3.2K</td><td>18” Mini‑LED 2.5K</td><td>14” OLED 2.8K</td></tr>
+              <tr><th>معدل التحديث</th><td>120Hz</td><td>240Hz</td><td>120Hz</td></tr>
+              <tr><th>الوزن</th><td>1.48 كجم</td><td>2.85 كجم</td><td>1.09 كجم</td></tr>
+              <tr><th>البطارية</th><td>حتى 18 ساعة</td><td>حتى 10 ساعات</td><td>حتى 21 ساعة</td></tr>
+              <tr><th></th><td><a href="#contact">اختر X1</a></td><td><a href="#contact">اختر R18</a></td><td><a href="#contact">اختر Air</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact" aria-labelledby="ctaTitle">
+      <div class="cta-orb" aria-hidden="true"></div>
+      <div class="container cta-inner">
+        <p class="section-kicker reveal">جاهز للخطوة التالية؟</p>
+        <h2 class="reveal" id="ctaTitle">جهازك القادم<br>أقرب مما تتخيل.</h2>
+        <p class="reveal">احصل على توصية مخصصة بحسب دراستك، عملك، ميزانيتك، وبرامجك اليومية.</p>
+        <form class="recommend-form reveal" id="recommendForm">
+          <label class="sr-only" for="email">البريد الإلكتروني</label>
+          <input id="email" type="email" placeholder="أدخل بريدك الإلكتروني" autocomplete="email" required>
+          <button type="submit">احصل على التوصية <span aria-hidden="true">←</span></button>
+        </form>
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="support">
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="#top"><span class="brand-mark"></span><span>NOVA</span></a><p>أجهزة متقدمة، بتجربة أبسط.</p></div>
+      <div><h3>المنتجات</h3><a href="#products">NOVA X1</a><a href="#products">NOVA R18</a><a href="#products">NOVA Air 14</a></div>
+      <div><h3>المساعدة</h3><a href="#compare">المقارنة</a><a href="#support">الدعم الفني</a><a href="#support">الضمان</a></div>
+      <div><h3>تابعنا</h3><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">X</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 NOVA. نموذج تجريبي.</span><span>صُمم لتجربة الواجهات المتقدمة.</span></div>
+  </footer>
+
+  <dialog class="film-modal" id="filmModal" aria-labelledby="filmTitle">
+    <button class="modal-close" id="closeFilm" aria-label="إغلاق">×</button>
+    <div class="film-frame">
+      <div class="film-noise"></div>
+      <div class="film-logo"><span class="brand-mark"></span><h2 id="filmTitle">NOVA X1</h2><p>CREATE WITHOUT LIMITS</p></div>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
